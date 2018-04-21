@@ -11,6 +11,6 @@ server.on("connection", function(socket){
 	});
 });
 
-server.listen(process.env.PORT || 3000,function(){
+server.listen(process.env.PORT || 1333, function(){
 	console.log("server listen to 3000 port");
 });
