@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Post method test</title>
+   
+    </head>
+  <body>
+  	<button>Hello</button>
+  	<input type="text">
+  	<script>
+	  	// $("button").click(function(){
+	   //      $.get("http://localhost:3000/", function(data, status){
+    //     		alert("Data: " + data + "\nStatus: " + status);
+	   	var text = {
+			    "GPS" : [ 
+		        -9, 
+		        77
+		    ],
+		    "a1" : 0,
+		    "a2" : 5,
+		    "a3" : 10,
+		    "io12" : 0,
+		    "io13" : 0,
+		    "io14" : 0,
+		    "io15" : 0,
+		    "io16" : 0,
+		    "d1" : 18,
+		    "d2" : 27,
+		    "d3" : 41,
+		    "d4" : 41,
+		    "d5" : 54,
+		    "time" : 1523787311253.0
+		}
+
+   	// 		 });
+
+	    $("button").click(function(){
+	   //  });	
+   			var txt = $("input").val();
+     		$.get("https://iottest96.herokuapp.com/",text, function(result){
+       			$("span").html(result);
+   			 });
+		});
+
+
+  	</script>
+     
+    
+  </body>
+</html>
